@@ -6,7 +6,7 @@ Lab 3 - RUVIP?
  */
 
 
-public class Ticket extends Comparable{
+public class Ticket{
 
     private int id;
     private int vip;
@@ -47,13 +47,10 @@ public class Ticket extends Comparable{
 	return id;
     }
 
-    //Since we extended Ticket to Comparable, we can directly use the compareTo() method in the Comparable class, 
-    //which returns 1 if larger than, -1 is less than, 0 if equal.
-    /*
-	
+
     public boolean equals(Ticket x ){
 	return this.getVip() > x.getVip();
     }
-    */
+    
     
 }
