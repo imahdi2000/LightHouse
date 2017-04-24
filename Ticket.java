@@ -8,16 +8,18 @@ Lab 3 - RUVIP?
 
 public class Ticket{
 
-    private int id;
-    private int vip;
-    private String name;
-    private String summary;
+    //instance variables
+    private int id, vip;
+    private String name, summary;
+    private boolean solved;
     
+    //default constructor
     public Ticket(){
 	name = "John Doe";
 	vip = 0;
 	summary = "No problems, us sayin hi";
 	id = (int)(Math.random() * 10000);
+        solved = false;
     }
     
     public void setVip(int num){
