@@ -30,6 +30,8 @@ public class HelpDesk{
     }
     
     public static void main (String [] args){
+	HelpDesk hd = new HelpDesk();
+
 	boolean loop = true;
 	//	Ticket tick = new Ticket();
 	//customers.add(tick);
