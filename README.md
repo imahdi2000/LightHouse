@@ -34,8 +34,16 @@ The Ticket class provides all the features a ticket has, which includes the foll
     Compare two tickets, return true it they are eqaul, false otherwise.</br></br>
     
     
+#### HelpDesk
+(+) public static void addTicket(String name, String summary, int vip,int id)</br>
+    Set up of all the instance variables of a ticket.</br></br>
+(+) public static String solve(){</br>
+    Print a string solution.</br></br>
 
 
+
+### Embellishments
+We created an option loop that allows for adding another ticket request after the first one is solved.
 
 
 
