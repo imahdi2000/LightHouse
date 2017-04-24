@@ -35,10 +35,10 @@ The Ticket class provides all the features a ticket has, which includes the foll
     
     
 #### HelpDesk
-(-) static ArrayPriorityQueue<Ticket> customers; 
-    A row of all waiting tickets. 
-(-) private static int ID;
-    An ID to be used in addTicket().
+(-) static ArrayPriorityQueue<Ticket> customers; </br>
+    A row of all waiting tickets. </br></br>
+(-) private static int ID;</br>
+    An ID to be used in addTicket(). </br></br>
 
 
 
