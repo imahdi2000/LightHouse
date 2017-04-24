@@ -11,7 +11,6 @@ public class Ticket{
     //instance variables
     private int id, vip;
     private String name, summary;
-    private boolean solved;
     
     //default constructor
     public Ticket(){
