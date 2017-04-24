@@ -26,7 +26,7 @@ public class HelpDesk{
 	for(int i = 0; i < customers.size();i++){
 	    System.out.println("Did you try turning it on and off?");
 	}
-	return "Your Wlecome";
+	return "Your Welcome";
     }
     
     public static void main (String [] args){
