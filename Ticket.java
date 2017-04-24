@@ -46,5 +46,9 @@ public class Ticket{
     public int getId(){
 	return id;
     }
+
+    public boolean equals(Ticket x ){
+	return this.getVip() > x.getVip();
+    }
     
 }
