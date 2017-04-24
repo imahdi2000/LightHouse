@@ -35,10 +35,11 @@ The Ticket class provides all the features a ticket has, which includes the foll
     
     
 #### HelpDesk
-(+) public static void addTicket(String name, String summary, int vip,int id)</br>
-    Set up of all the instance variables of a ticket.</br></br>
-(+) public static String solve(){</br>
-    Print a string solution.</br></br>
+(-) static ArrayPriorityQueue<Ticket> customers; 
+    A row of all waiting tickets. 
+(-) private static int ID;
+    An ID to be used in addTicket().
+
 
 
 
