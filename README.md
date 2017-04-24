@@ -35,6 +35,10 @@ The Ticket class provides all the features a ticket has, which includes the foll
     
     
 #### HelpDesk
+It creates a customers row storing all the tickets and allows the user to add tickets to the customer row. Then it will print string statements that greet the customer, ask questions, and address the solution to the problem.
+
+Note: We didn't get our addTicket() method to work and thus the dequing part after that also didn't turn out to function :(
+
 (-) static ArrayPriorityQueue<Ticket> customers; </br>
     A row of all waiting tickets. </br></br>
 (-) private static int ID;</br>
