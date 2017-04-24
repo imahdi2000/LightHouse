@@ -12,14 +12,15 @@ public class ArrayPriorityQueue<T> implements PriorityQueue<T> {
     }
 
     // Enqueue value
-    public void add(T x) {
+    /*  public void add(T x) {
 	// If arraylist is empty or x is the lowest new value
-	if (_data.isEmpty()) {
+	if (_data.isEmpty()){
 	    _data.add(x);
 	    return;
 	    
 	}
 	// If value is greater or equal to the value at index i, then add value current index
+	else{
 	for (int i = 0; i < _data.size(); i++) {
 	    Ticket y = (Ticket)_data.get(i);
 	    if (x.equals(y)){
@@ -27,6 +28,12 @@ public class ArrayPriorityQueue<T> implements PriorityQueue<T> {
 		return;
 	    }
 	}
+	}
+    
+	}*/
+
+    public void add(T x){
+	_data.add(x);
     }
 
     // Check if size is 0
@@ -51,6 +58,9 @@ public class ArrayPriorityQueue<T> implements PriorityQueue<T> {
 	    ret += each + " ";
 	}
 	return ret;
+    }
+    public int size(){
+	return _data.size();
     }
 }
     /*

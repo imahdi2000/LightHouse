@@ -23,10 +23,10 @@ public class Ticket{
     }
     
 public Ticket(String mingzi, int VIP, String summ, int ID){
-	name = "John Doe";
-	vip = 0;
-	summary = "No problems, us sayin hi";
-	id = (int)(Math.random() * 10000);
+	name = mingzi;
+	vip = VIP;
+	summary = summ;
+	id = ID;
     }
 
     public void setVip(int num){

@@ -10,35 +10,51 @@ public class HelpDesk{
 	ID = 0;
     }
 
-    public static void addTick(){
-	int vipness = (int)(Math.random() * 5);
-	
-	String ret = "Hello, I see you seek assistance.\nWhat is your name?";
-	System.out.println(ret);
-	string name = Keyboard.readString();
-	
-	ret = "Thank you. Now choose a number, please:\n1. My computer isn't working.\t2. My mouse isn't working My computer isn't working.\t3. I'm not working.";
-	System.out.println(ret);
-	int summary = Keyboard.readInt();
-	
-	String sum1 = "My computer isn't working.";
-	String sum2 = "My computer isn't working.";
-	String sum3 = "I'm not working.";
-	
-	if(summary == 1){
-	    customers.add(new Ticket(name, vipness, sum1, ID)); 
-	}
-	if(summary == 2){
-	    customers.add(new Ticket(name, vipness, sum2, ID));
-	}
-	if(summary ==3){
-	    customers.add(new Ticket(name, vipness, sum3, ID));
-	}
 
-	ID+=1;	
+
+    public static void addTicket(String name, String summary, int vip,int id){
+	Ticket tick = new Ticket();
+	tick.setVip(vip);
+	tick.setName(name);
+	tick.setSummary(summary);
+	tick.setId(id);
+	customers.add(tick);
+    }
+
+    public static String solve(){
+	for(int i = 0; i < customers.size();i++){
+	    System.out.println("ok");
+	}
+	return "Solved";
     }
     
     public static void main (String [] args){
-	addTick();
+	boolean loop = true;
+	//	Ticket tick = new Ticket();
+	//customers.add(tick);
+	while(loop == true){
+	System.out.println("Hello, I see you seek assistance.\nWhat is your name?");
+	String name = Keyboard.readString();	
+	System.out.println("Thank you. Now please explain the problem.");
+	String summary = Keyboard.readString();
+	int vipness = (int)(Math.random() * 5);
+	    
+	
+	    System.out.println("Would you like to add another request?\nSelect (1) for YES\nSelect (2) for NO");
+	    
+	    int choice =  Keyboard.readInt();
+	    if(choice == 1){
+		System.out.println("hi");
+		addTicket(name,summary,vipness,ID);
+		ID+=1;
+	    }
+	    else{
+		solve();
+		loop = false;
+	    }
+	    
+	}
+	System.out.println("Thank You");
+
     }
 }
