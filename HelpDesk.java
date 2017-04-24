@@ -22,10 +22,11 @@ public class HelpDesk{
     }
 
     public static String solve(){
+	
 	for(int i = 0; i < customers.size();i++){
-	    System.out.println("ok");
+	    System.out.println("Did you try turning it on and off?");
 	}
-	return "Solved";
+	return "Your Wlecome";
     }
     
     public static void main (String [] args){
@@ -38,14 +39,13 @@ public class HelpDesk{
 	System.out.println("Thank you. Now please explain the problem.");
 	String summary = Keyboard.readString();
 	int vipness = (int)(Math.random() * 5);
-	    
+	addTicket(name,summary,vipness,ID);
+
 	
 	    System.out.println("Would you like to add another request?\nSelect (1) for YES\nSelect (2) for NO");
 	    
 	    int choice =  Keyboard.readInt();
 	    if(choice == 1){
-		System.out.println("hi");
-		addTicket(name,summary,vipness,ID);
 		ID+=1;
 	    }
 	    else{
